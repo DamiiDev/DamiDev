@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
+import { FiDownload } from "react-icons/fi";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,17 +54,19 @@ const Header = () => {
         <div className="download-darkMode">
           <div className="desktop-download">
             <a href="/Festus Damilare Michael Re.pdf" download>
-              Download Resume
+              <FiDownload /> Download Resume
             </a>
           </div>
-          <div className="dark-mode">
-            <button onClick={() => setIsDarkMode((d) => !d)}>
-              {isDarkMode ? <FiSun size={24} /> : <FiMoon size={24} />}
-            </button>
+          <div className="right-icons">
+            <div className="dark-mode">
+              <button onClick={() => setIsDarkMode((d) => !d)}>
+                {isDarkMode ? <FiSun size={24} /> : <FiMoon size={24} />}
+              </button>
+            </div>
           </div>
-        </div>
-        <div className="menu-icon" onClick={() => setIsOpen(true)}>
-          <FiMenu size={24} />
+          <div className="menu-icon" onClick={() => setIsOpen(true)}>
+            <FiMenu size={24} />
+          </div>
         </div>
       </div>
 
@@ -88,7 +91,7 @@ const Header = () => {
         </a>
         <div className="mobile-download">
           <a href="/Festus Damilare Michael Re.pdf" download>
-            Download Resume
+            <FiDownload /> Download Resume
           </a>
         </div>
       </div>
