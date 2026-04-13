@@ -39,17 +39,17 @@ const Header = () => {
     };
   }, []);
   return (
-    <div className="header">
+    <div className="header" id="home">
       <div className="hamburg">
         <div className="logo">
           <h1>Festus Damilare</h1>
         </div>
         <div className="nav">
-          <a href="#">Home</a>
-          <a href="#">Projects</a>
-          <a href="#">Experience</a>
-          <a href="#">Education</a>
-          <a href="#">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
         </div>
         <div className="download-darkMode">
           <div className="desktop-download">
