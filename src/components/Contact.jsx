@@ -16,16 +16,17 @@ const Contact = () => {
         </div>
         <div className="contact-details">
           <p>
-            <FaEnvelope />{" "}
+            <FaEnvelope className="contact-icon" />{" "}
             <a href="mailto:damilarefestus12@gmail.com">
               damilarefestus12@gmail.com
             </a>
           </p>
           <p>
-            <FaPhone /> <a href="tel:+2349069394606">+234 906 939 4606</a>
+            <FaPhone className="contact-icon" />{" "}
+            <a href="tel:+2349069394606">+234 906 939 4606</a>
           </p>
           <p>
-            <FaMapMarkerAlt /> Lagos State, Nigeria
+            <FaMapMarkerAlt className="contact-icon" /> Lagos State, Nigeria
           </p>
         </div>
       </div>

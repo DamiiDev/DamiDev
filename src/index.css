@@ -485,11 +485,11 @@ text-align: justify;
 .ready-to-start button {
   background-color: #1a237e;
   color: #fff;
-  padding: 5px 10px;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
-  margin-top: 5px;
+  font-size: 18px;
+  margin-top: 30px;
 }
 
 .contact {
@@ -501,7 +501,7 @@ text-align: justify;
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .contact-details p {
@@ -514,4 +514,63 @@ text-align: justify;
 }
 .contact-details p a {
   text-decoration: none;
+  color: #000000;
+}
+
+.contact-icon {
+  color: #1a237e;
+}
+
+/* Footer style */
+
+.footer {
+  display: block;
+  padding: 0px 30px 20px 30px;
+}
+
+.footer h3 {
+  font-size: 24px;
+    color: #1a237e;
+    display: block;
+}
+
+.footer p {
+  font-size: 18px;
+  margin-top: 5px;
+  text-align: justify;
+}
+
+.quick-links {
+  display: block;
+  margin-top: 20px;
+}
+
+.quick-links a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+.quick-links ul {
+  margin-top: 10px;
+  list-style: none;
+  font-size: 20px;
+}
+
+.connect-with-me {
+  margin-top: 20px;
+}
+
+.connect-with-me a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  padding: 0px 20px 0px 0px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 30px 0px;
 }
