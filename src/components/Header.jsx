@@ -45,7 +45,7 @@ const Header = () => {
           <h1>Festus Damilare</h1>
         </div>
         <div className="nav">
-          <a href="#home">Home</a>
+          <a href="#">Home</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
@@ -77,16 +77,16 @@ const Header = () => {
         <a href="#" onClick={() => setIsOpen(false)}>
           Home
         </a>
-        <a href="#" onClick={() => setIsOpen(false)}>
+        <a href="#projects" onClick={() => setIsOpen(false)}>
           Projects
         </a>
         <a href="#" onClick={() => setIsOpen(false)}>
           Experience
         </a>
-        <a href="#" onClick={() => setIsOpen(false)}>
+        <a href="#education" onClick={() => setIsOpen(false)}>
           Education
         </a>
-        <a href="#" onClick={() => setIsOpen(false)}>
+        <a href="#contact" onClick={() => setIsOpen(false)}>
           Contact
         </a>
         <div className="mobile-download">

@@ -1,6 +1,6 @@
 import React from "react";
 
-const skills = () => {
+const Skills = () => {
   return (
     <div>
       <div className="skills">
@@ -15,28 +15,62 @@ const skills = () => {
         <div className="skills-grid">
           <div className="skills-grid-stack">
             <h3>Frontend Core</h3>
-            <p>Fundamental web technologies</p>
-            <button>HTML</button>
-            <button>CSS</button>
-            <button>JavaScript</button>
+            <p>
+              Strong foundation in essential web technologies, enabling the
+              development of responsive, accessible, and high-performance user
+              interfaces.
+            </p>
+            <div className="stack-btn">
+              <button>HTML</button>
+              <button>CSS</button>
+              <button>JavaScript</button>
+            </div>
           </div>
           <div className="skills-grid-stack">
             <h3>Library</h3>
-            <p>Modern development tools</p>
-            <button>React</button>
+            <p>
+              Experience leveraging modern tools and frameworks to build
+              scalable and maintainable frontend applications.
+            </p>
+            <div className="stack-btn">
+              <button>React</button>
+            </div>
+          </div>
+          <div className="skills-grid-stack">
+            <h3>Styling Systems</h3>
+            <p>
+              Proficient in creating visually appealing and consistent UI
+              designs using modern styling approaches.
+            </p>
+            <div className="stack-btn">
+              <button>CSS</button>
+              <button>Tailwind CSS</button>
+            </div>
           </div>
           <div className="skills-grid-stack">
             <h3>Version Control</h3>
-            <p>Code Management</p>
-            <button>Git</button>
-            <button>GitHub</button>
+            <p>
+              Efficient in managing codebases, collaboration, and version
+              tracking using industry-standard tools.
+            </p>
+            <div className="stack-btn">
+              <button>Git</button>
+              <button>GitHub</button>
+              <button>Vs Code</button>
+            </div>
           </div>
           <div className="skills-grid-stack">
-            <h3>Frontend Core</h3>
-            <p>Fundamental web technologies</p>
-            <button>HTML</button>
-            <button>CSS</button>
-            <button>JavaScript</button>
+            <h3>Currently Expanding My Skillset</h3>
+            <p>
+              Actively learning and integrating new technologies to broaden
+              development capabilities.
+            </p>
+            <div className="stack-btn">
+              <button>API Integration</button>
+              <button>Node.js</button>
+              <button>Express.js</button>
+              <button>MongoDB</button>
+            </div>
           </div>
         </div>
         <div className="pro-tip">
@@ -51,4 +85,4 @@ const skills = () => {
   );
 };
 
-export default skills;
+export default Skills;

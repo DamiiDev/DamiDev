@@ -4,7 +4,7 @@ import image from "../assets/dammie.jpeg";
 const MyProjects = () => {
   return (
     <div className="my-project-content">
-      <div className="my-projects">
+      <div id="projects" className="my-projects">
         <h2>My Projects</h2>
         <p>
           Every project in this collection is crafted with deliberate attention

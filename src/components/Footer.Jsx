@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaCopyright, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
@@ -19,11 +20,12 @@ const Footer = () => {
               <a href="#about">About Me</a>
             </li>
             <li>
-              {" "}
               <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <Link className="navi-link" to="/skills">
+                Skills
+              </Link>
             </li>
             <li>
               <a href="#contact">Contact</a>
@@ -57,8 +59,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="copyright">
-        <FaCopyright /> {new Date().getFullYear()} Damilare Festus. All rights
-        reserved.
+        <FaCopyright className="copyright-icon" /> {new Date().getFullYear()}{" "}
+        Damilare Festus. All rights reserved.
       </div>
     </div>
   );

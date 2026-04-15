@@ -103,7 +103,6 @@ body.dark-mode {
   top: 80px;
   left: 0;
   width: 100%;
-  
   background-color: #faf8f8;
   padding: 0px 40px 0px 10px;
   transform: translateX(-100%);
@@ -147,6 +146,7 @@ body.dark-mode {
 }
 
 @media (max-width: 768px) {
+
   .nav, .desktop-download {
     display: none;
   }
@@ -255,7 +255,7 @@ body.dark-mode {
     margin-top: 20px;
 }
 
-.bio-buttons .view-button {
+.view-button {
     padding: 10px 20px;
     background-color: #1a237e;
     color: #fff;
@@ -265,12 +265,13 @@ body.dark-mode {
     font-size: 12px;
 }
 
-.bio-buttons .contact-button {
+.contact-button {
   padding: 10px 20px;
   background-color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 12px;
 }
 
 .profile-image {
@@ -291,7 +292,7 @@ body.dark-mode {
   box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 .profile-image img {
     width: 350px;
     height: 350px;
@@ -308,6 +309,14 @@ body.dark-mode {
   .wrap-content {
   text-align: left;
   font-size: 20px;
+  }
+
+    .wrap-content p{
+      font-size: 20px;
+    }
+
+  .view-button, .contact-button {
+    font-size: 16px;
   }
 
   .tab-content p {
@@ -352,6 +361,21 @@ body.dark-mode {
   display: block;
 }
 
+.nav-link {
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  color: #000000;
+}
+
+.nav-link:hover {
+  color: #212a84;
+}
+
 
 .about-me-tab button:hover {
   color: #212a84;
@@ -377,6 +401,8 @@ body.dark-mode {
   cursor: pointer;
 }
 
+
+
 /* My projects style */
 
 .my-project-content {
@@ -385,11 +411,11 @@ body.dark-mode {
 }
 
 .my-projects h2 {
-font-size: 30px;
-color: #1a237e;
-display: flex;
-justify-content: center;
-align-items: center;
+  font-size: 30px;
+  color: #1a237e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .my-projects p {
@@ -403,6 +429,7 @@ text-align: justify;
   margin-top: 10px;
   border: 1px solid #1a237e;
   border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project h4 {
@@ -420,12 +447,24 @@ text-align: justify;
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.projects-grid p {
+  color: #5b5757;
+  font-size: 16px;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .project img {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .view {
@@ -462,6 +501,16 @@ text-align: justify;
   border: none;
   border-radius: 5px;
   font-size: 14px;
+}
+
+@media (min-width: 768px) {
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+
 }
 
 
@@ -521,6 +570,17 @@ text-align: justify;
   color: #1a237e;
 }
 
+@media (min-width: 768px) {
+
+  .contact-details {
+    max-width: 350px;
+    gap: 20px;
+  
+    
+
+  }
+}
+
 /* Footer style */
 
 .footer {
@@ -572,5 +632,97 @@ text-align: justify;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0px 30px 0px;
+  margin: 20px 0px 30px 0px;  
+  font-size: 14px;
+  color: #5b5757;
+}
+
+.copyright-icon {
+  margin-right: 5px;
+
+}
+
+@media (max-width: 768px) {
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  
+}
+
+/* Skills Style */
+
+.skills {
+  margin-top: 80px;
+  display: block;
+  padding: 40px 30px 20px 30px;
+}
+
+.skills-content p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.skills-content {
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.skills-grid-stack {
+  display: block;
+  border: 1px solid #dcdeeb;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+.skills-grid-stack h3 {
+  color: #1a237e;
+}
+
+.skills-grid-stack p {
+  text-align: justify;
+  font-size: 16px;
+}
+
+.skills-grid-stack button {
+  background-color: #e9eaef;
+  color: #1a237e;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.stack-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.pro-tip {
+  border-left: 4px solid #1a237e;
+  padding: 0px 20px 0px 20px;
+  font-size: 16px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+
+  .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  
 }
