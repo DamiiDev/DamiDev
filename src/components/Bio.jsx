@@ -7,7 +7,7 @@ const Bio = () => {
       <div id="about" className="my-name">
         <div className="wrap-content">
           <h2>
-            Hi, I'm <span>Damilare Festus</span>
+            Hi, I'm <span className="damiboy">Damilare Festus</span>
             <br /> <span className="typing">A Frontend Developer</span>
           </h2>
 
@@ -20,7 +20,7 @@ const Bio = () => {
           </p>
           <div className="bio-buttons">
             <a href="#projects">
-              <button className="view-button">View My Projects</button>
+              <button className="contact-button">View My Projects</button>
             </a>
             <a href="#contact">
               <button className="contact-button">Contact Me</button>

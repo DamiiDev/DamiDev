@@ -1,10 +1,25 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
   const [isLoading, setIsloading] = useState(false);
+
+  useEffect(() => {
+    const element = document.querySelector(".comment-form");
+
+    const observer = new IntersectionObserver((enteries) => {
+      enteries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    });
+    if (element) observer.observe(element);
+
+    return () => observer.disconnect();
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -27,8 +42,6 @@ const Contact = () => {
       .finally(() => {
         setIsloading(false);
       });
-    
-    
   };
   return (
     <div>
@@ -77,28 +90,6 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        {/* <div className="contact-details">
-          <div className="contact-email">
-            <p>
-              <FaEnvelope className="contact-icon" />{" "}
-              <a href="mailto:damilarefestus12@gmail.com">
-                damilarefestus12@gmail.com
-              </a>
-            </p>
-          </div>
-
-          <div className="contact-phone">
-            <p>
-              <FaPhone className="contact-icon" />{" "}
-              <a href="tel:+2349069394606">+234 906 939 4606</a>
-            </p>
-          </div>
-          <div className="contact-location">
-            <p>
-              <FaMapMarkerAlt className="contact-icon" /> Lagos State, Nigeria
-            </p>
-          </div>
-        </div> */}
       </div>
     </div>
   );

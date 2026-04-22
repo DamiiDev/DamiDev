@@ -42,8 +42,9 @@ const Header = () => {
   return (
     <div className="header" id="home">
       <div className="hamburg">
-        <div className="logo">
-          <h1>Festus Damilare</h1>
+        <div className="navbar-logo">
+          <div className="navbar-logo-glow"></div>
+          <span className="navbar-logo-text">DF</span>
         </div>
         <div className="nav">
           <a href="#">Home</a>
@@ -60,13 +61,7 @@ const Header = () => {
               <FiDownload /> Download Resume
             </a>
           </div>
-          {/* <div className="right-icons">
-            <div className="dark-mode">
-              <button onClick={() => setIsDarkMode((d) => !d)}>
-                {isDarkMode ? <FiSun size={24} /> : <FiMoon size={24} />}
-              </button>
-            </div>
-          </div> */}
+
           <div className="menu-icon" onClick={() => setIsOpen(true)}>
             <FiMenu size={24} />
           </div>
@@ -89,7 +84,11 @@ const Header = () => {
         {/* <a href="#education" onClick={() => setIsOpen(false)}>
           Education
         </a> */}
-        <Link className="nav-link" to="/skills" onClick={() => setIsOpen(false)}>
+        <Link
+          className="nav-link"
+          to="/skills"
+          onClick={() => setIsOpen(false)}
+        >
           Skills
         </Link>
         <a href="#contact" onClick={() => setIsOpen(false)}>

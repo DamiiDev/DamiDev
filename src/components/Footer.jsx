@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
         <div className="connect-with-me">
           <h3>Connect with me</h3>
-          <a
+          <a className="mail"
             href="mailto:damilarefestus12@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -43,6 +43,7 @@ const Footer = () => {
           </a>
           <div className="icons">
             <a
+              className="social-icon"
               href="https://github.com/DamiiDev"
               target="_blank"
               rel="noopener noreferrer"
@@ -50,6 +51,7 @@ const Footer = () => {
               <FaGithub />
             </a>
             <a
+              className="social-icon"
               href="https://www.linkedin.com/in/damilare-festus-915386202/"
               target="_blank"
               rel="noopener noreferrer"
