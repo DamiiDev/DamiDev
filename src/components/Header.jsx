@@ -44,15 +44,15 @@ const Header = () => {
       <div className="hamburg">
         <div className="navbar-logo">
           <div className="navbar-logo-glow"></div>
-          <span className="navbar-logo-text">DF</span>
+          <div className="navbar-logo-text">
+            <a href="https://damilarefestusmichael.vercel.app">DF</a>
+          </div>
         </div>
         <div className="nav">
           <a href="#">Home</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
-          <Link className="nav-link" to="/skills">
-            Skills
-          </Link>
+          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </div>
         <div className="download-darkMode">
@@ -81,16 +81,9 @@ const Header = () => {
         <a href="#" onClick={() => setIsOpen(false)}>
           Experience
         </a>
-        {/* <a href="#education" onClick={() => setIsOpen(false)}>
-          Education
-        </a> */}
-        <Link
-          className="nav-link"
-          to="/skills"
-          onClick={() => setIsOpen(false)}
-        >
+        <a href="#skills" onClick={() => setIsOpen(false)}>
           Skills
-        </Link>
+        </a>
         <a href="#contact" onClick={() => setIsOpen(false)}>
           Contact
         </a>

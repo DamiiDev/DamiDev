@@ -103,6 +103,7 @@ html,
   top: 0;
   left: 0;
   z-index: 1000;
+  border-bottom: 1px solid var(--box-border);
 }
 
 .navbar-logo {
@@ -136,14 +137,18 @@ html,
   position: absolute
 }
 
-.navbar-logo-text {
+.navbar-logo-text a {
   z-index: 2;
   color: var(--text-primary);
   letter-spacing: 1px;
   font-size: .9rem;
   font-weight: 700;
-  position: relative
+  position: relative;
+  text-decoration: none;
 }
+
+
+
 
 .nav {
   display: flex;
@@ -1173,4 +1178,85 @@ position: relative;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
+}
+
+
+/* carousel style */
+
+.skills-carousel {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.carousel-auto {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.skills-carousel svg {
+  font-size: 55px;
+  color: var(--text-primary);
+  transition: 0.3s;
+}
+
+.skills-carousel svg:hover {
+  transform: scale(1.2);
+  color: var(--glow-color);
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 40px;
+}
+
+.skill-item span {
+  font-size: 12px;
+}
+
+/* Brand colors */
+.skill-item.html svg {
+  color: #E34F26;
+}
+
+.skill-item.css svg {
+  color: #1572B6;
+}
+
+.skill-item.js svg {
+  color: #F7DF1E;
+}
+
+.skill-item.react svg {
+  color: #61DAFB;
+}
+
+.skill-item.tailwind svg {
+  color: #38B2AC;
+}
+
+.skill-item.git svg {
+  color: #F05032;
+}
+
+.skill-item.github svg {
+  color: #ffffff;
+}
+
+.skill-item.node svg {
+  color: #339933;
+}
+
+.skill-item.express svg {
+  color: #ffffff;
+}
+
+.skill-item.mongodb svg {
+  color: #47A248;
+}
+
+.skill-item.vscode svg {
+  color: #007ACC;
 }

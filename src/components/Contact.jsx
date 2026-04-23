@@ -5,6 +5,8 @@ import emailjs from "@emailjs/browser";
 const Contact = () => {
   const form = useRef();
   const [isLoading, setIsloading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     const element = document.querySelector(".comment-form");
@@ -21,27 +23,29 @@ const Contact = () => {
     return () => observer.disconnect();
   }, []);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
     setIsloading(true);
+    setSuccess(false);
+    setError(false);
 
-    emailjs
-      .sendForm(
+    try {
+      await emailjs.sendForm(
         "service_j2q3nxi",
-        "template_0vherca",
+        "template_ddtyl9w",
         form.current,
         "k8BL38mFhkajQwma3",
-      )
-      .then(() => {
-        setSuccess(true);
-        form.current.reset();
-      })
-      .catch(() => {
-        setError(true);
-      })
-      .finally(() => {
-        setIsloading(false);
-      });
+      );
+      setSuccess(true);
+      e.target.reset();
+
+      setTimeout(() => setSuccess(false), 3000);
+    } catch (err) {
+      console.error("EmailJS error:", err);
+      setError(true);
+    } finally {
+      setIsloading(false);
+    }
   };
   return (
     <div>

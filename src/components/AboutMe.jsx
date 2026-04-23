@@ -34,7 +34,9 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="get-in-touch-button fade-up delay-3">
-          <button>Get In Touch</button>
+          <a href="#contact">
+            <button>Get In Touch</button>
+          </a>
         </div>
       </div>
     </div>
