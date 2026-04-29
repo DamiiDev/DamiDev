@@ -89,7 +89,6 @@ html,
   background: var(--background);
 }
 
-
 .hamburg {
   padding: 16px 40px 16px 16px;
   display: flex;
@@ -104,6 +103,7 @@ html,
   left: 0;
   z-index: 1000;
   border-bottom: 1px solid var(--box-border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
 .navbar-logo {

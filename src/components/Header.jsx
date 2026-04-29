@@ -1,19 +1,10 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
-import { FiMenu } from "react-icons/fi";
-import { FiMoon, FiSun } from "react-icons/fi";
-import { FiX } from "react-icons/fi";
-import { FiDownload } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { FiMenu, FiX, FiDownload } from "react-icons/fi";
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
 
-  useEffect(() => {
-    const savedMode = localStorage.getItem("darkMode") === "true";
-    setIsDarkMode(savedMode);
-  }, []);
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
@@ -21,11 +12,6 @@ const Header = () => {
       document.body.style.overflow = "";
     };
   }, [isOpen]);
-
-  useEffect(() => {
-    document.body.classList.toggle("dark-mode", isDarkMode);
-    localStorage.setItem("darkMode", isDarkMode);
-  }, [isDarkMode]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -88,7 +74,7 @@ const Header = () => {
           Contact
         </a>
         <div className="mobile-download">
-          <a href="/Festus Damilare Michael Re.pdf" download>
+          <a href="/Festus Damilare CV.pdf" download>
             <FiDownload /> Download Resume
           </a>
         </div>
