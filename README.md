@@ -1,16 +1,46 @@
-# React + Vite
+# 🌐 Festus Damilare Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 👋 Overview
+This is my personal frontend developer portfolio showcasing my projects, skills, and experience. It highlights my ability to build clean, responsive, and user-friendly web applications using modern technologies.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+👉 https://damilarefestusmichael.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+- React
+- CSS
+- JavaScript (ES6+)
+- Vite
 
-## React Compiler
+## ✨ Features
+- Fully responsive design (mobile, tablet, desktop)
+- Clean and modern UI/UX
+- Project showcase section
+- Smooth navigation
+- Optimized performance
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📂 Project Structure
+src/
+ ├── components/   # Reusable UI components
+ ├── pages/        # Page-level components
+ ├── assets/       # Images and static files
+ ├── App.jsx       # Root component
+ └── main.jsx      # Entry point
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 📬 Contact
+Feel free to reach out for collaborations or opportunities:
+
+- Email: damilarefestus12@gmail.com  
+- LinkedIn: https://www.linkedin.com/in/damilare-festus-915386202/ 
+- Twitter: https://x.com/Engr_drey1  
+
+## 📌 Future Improvements
+- Add blog section  
+- Integrate backend for contact form  
+- Improve animations and interactivity  
+
+## 📝 License
+This project is open source and available under the MIT License.
+
