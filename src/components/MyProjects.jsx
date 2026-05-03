@@ -122,7 +122,7 @@ const MyProjects = () => {
             <button>CSS</button>
           </div>
           <div className="view">
-            <a href="https://devtrybe.vercel.app/">
+            <a href="https://devtrybe.vercel.app">
               <button>View Live</button>
             </a>
             <a href="https://github.com/DamiiDev/DamiDev.git">
