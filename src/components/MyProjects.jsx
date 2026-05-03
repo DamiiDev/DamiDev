@@ -52,10 +52,18 @@ const MyProjects = () => {
             <button>CSS</button>
           </div>
           <div className="view">
-            <a href="https://devtrybe.vercel.app">
+            <a
+              href="https://devtrybe.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button>View Live</button>
             </a>
-            <a href="https://github.com/DamiiDev/Dynamic-User-Profile-Dashboard-React-.git">
+            <a
+              href="https://github.com/DamiiDev/Dynamic-User-Profile-Dashboard-React-.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button>View Github</button>
             </a>
           </div>
@@ -76,10 +84,18 @@ const MyProjects = () => {
             <button>CSS</button>
           </div>
           <div className="view">
-            <a href="https://jobtracker-zeta-beige.vercel.app">
+            <a
+              href="https://jobtracker-zeta-beige.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button>View Live</button>
             </a>
-            <a href="https://github.com/DamiiDev/Job-Tracker-App.git">
+            <a
+              href="https://github.com/DamiiDev/Job-Tracker-App.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button>View Github</button>
             </a>
           </div>
@@ -99,10 +115,18 @@ const MyProjects = () => {
             <button>CSS</button>
           </div>
           <div className="view">
-            <a href="https://quiz-game-sable-theta.vercel.app/">
+            <a
+              href="https://quiz-game-sable-theta.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button>View Live</button>
             </a>
-            <a href="https://github.com/DamiiDev/Quiz-Game.git">
+            <a
+              href="https://github.com/DamiiDev/Quiz-Game.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button>View Github</button>
             </a>
           </div>
@@ -122,10 +146,18 @@ const MyProjects = () => {
             <button>CSS</button>
           </div>
           <div className="view">
-            <a href="https://damilarefestusmichael.vercel.app">
+            <a
+              href="https://damilarefestusmichael.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button>View Live</button>
             </a>
-            <a href="https://github.com/DamiiDev/DamiDev.git">
+            <a
+              href="https://github.com/DamiiDev/DamiDev.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button>View Github</button>
             </a>
           </div>
@@ -146,10 +178,18 @@ const MyProjects = () => {
             <button>CSS</button>
           </div>
           <div className="view">
-            <a href="https://loginpage-nine-eosin.vercel.app/">
+            <a
+              href="https://loginpage-nine-eosin.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button>View Live</button>
             </a>
-            <a href="https://github.com/DamiiDev/Loginpage.git">
+            <a
+              href="https://github.com/DamiiDev/Loginpage.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button>View Github</button>
             </a>
           </div>
