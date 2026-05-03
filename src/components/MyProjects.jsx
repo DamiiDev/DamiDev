@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import devtrybe from "../assets/devdev.jpg";
 import jobtracker from "../assets/Jobtrackerr.jpg";
 import quiz from "../assets/quizz.jpg";
-import portfolio from "../assets/portport.jpg";
+import portfolio from "../assets/portproject.jpg";
 import authen from "../assets/auth.jpg";
 
 const MyProjects = () => {
@@ -52,7 +52,7 @@ const MyProjects = () => {
             <button>CSS</button>
           </div>
           <div className="view">
-            <a href="#devtrybe">
+            <a href="https://devtrybe.vercel.app">
               <button>View Live</button>
             </a>
             <a href="https://github.com/DamiiDev/Dynamic-User-Profile-Dashboard-React-.git">
@@ -76,7 +76,7 @@ const MyProjects = () => {
             <button>CSS</button>
           </div>
           <div className="view">
-            <a href="#devtrybe">
+            <a href="https://jobtracker-zeta-beige.vercel.app">
               <button>View Live</button>
             </a>
             <a href="https://github.com/DamiiDev/Job-Tracker-App.git">
@@ -122,7 +122,7 @@ const MyProjects = () => {
             <button>CSS</button>
           </div>
           <div className="view">
-            <a href="https://devtrybe.vercel.app">
+            <a href="https://damilarefestusmichael.vercel.app">
               <button>View Live</button>
             </a>
             <a href="https://github.com/DamiiDev/DamiDev.git">
